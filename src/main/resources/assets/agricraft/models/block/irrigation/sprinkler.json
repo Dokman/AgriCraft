@@ -1,0 +1,79 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "wood": "minecraft:block/oak_planks",
+    "metal": "minecraft:block/iron_block",
+    "water": "agricraft:block/irrigation_water",
+    "particle": "minecraft:block/oak_planks"
+  },
+  "elements": [
+    {
+      "from": [
+        5,
+        15,
+        5
+      ],
+      "to": [
+        11,
+        21,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#wood",
+          "uv": [
+            5,
+            10,
+            11,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#wood",
+          "uv": [
+            5,
+            10,
+            11,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#wood",
+          "uv": [
+            5,
+            10,
+            11,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#wood",
+          "uv": [
+            5,
+            10,
+            11,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#wood",
+          "uv": [
+            5,
+            5,
+            11,
+            11
+          ]
+        },
+        "down": {
+          "texture": "#wood",
+          "uv": [
+            5,
+            5,
+            11,
+            11
+          ]
+        }
+      }
+    }
+  ]
+}

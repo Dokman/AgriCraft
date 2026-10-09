@@ -72,6 +72,7 @@ public class AgriCraftClient {
 
 	@SubscribeEvent
 	public static void loadModels(ModelEvent.RegisterAdditional event) {
+        event.register(ModelResourceLocation.standalone(com.agricraft.agricraft.client.ber.SprinklerBlockEntityRenderer.HEAD));
 		// https://discord.com/channels/313125603924639766/983834532904042537/1104441106248253592
 		for (Map.Entry<ResourceLocation, Resource> entry : FileToIdConverter.json("models/seed").listMatchingResources(Minecraft.getInstance().getResourceManager()).entrySet()) {
 			ResourceLocation seed = ResourceLocation.parse(entry.getKey().toString().replace("models/seed", "seed").replace(".json", ""));
@@ -96,6 +97,7 @@ public class AgriCraftClient {
 
 	@SubscribeEvent
 	public static void registerBer(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerBlockEntityRenderer(AgriBlockEntities.IRRIGATION.get(), com.agricraft.agricraft.client.ber.SprinklerBlockEntityRenderer::new);
 		event.registerBlockEntityRenderer(AgriBlockEntities.CROP.get(), CropBlockEntityRenderer::new);
 		event.registerBlockEntityRenderer(AgriBlockEntities.SEED_ANALYZER.get(), SeedAnalyzerEntityRenderer::new);
 	}

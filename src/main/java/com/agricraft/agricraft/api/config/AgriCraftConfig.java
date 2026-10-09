@@ -118,6 +118,10 @@ public final class AgriCraftConfig {
 			.comment("Set to true to hide the Mutativity stat (hidden stats will not show up in tooltips or seed analysis). Setting min and max equal and hiding a stat effectively disables it, with its behaviour at the defined value for min and max.")
 			.define("mutativity_hidden", false);
 
+	public static final ModConfigSpec.IntValue IRRIGATION_WATER_PER_TICK = BUILDER.pop().push("irrigation").comment("Water consumed by an active sprinkler per tick, in mB.").defineInRange("water_per_tick", 5, 1, 1000);
+	public static final ModConfigSpec.DoubleValue IRRIGATION_GROWTH_CHANCE = BUILDER.comment("Chance of an extra crop growth tick when irrigated.").defineInRange("growth_chance", 0.1, 0.0, 1.0);
+	public static final ModConfigSpec.BooleanValue COMPAT_CREATE = BUILDER.pop().push("compat").define("enable_create", true);
+
 	public static final ModConfigSpec SPEC = BUILDER.pop().build();
 
 }

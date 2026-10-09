@@ -22,6 +22,13 @@ import static com.agricraft.agricraft.common.registry.AgriRegistries.ITEMS;
 public interface AgriItems {
 
 
+	DeferredItem<BlockItem> IRRIGATION_TANK = ITEMS.register("irrigation_tank", () -> new BlockItem(AgriBlocks.IRRIGATION_TANK.get(), new Item.Properties()));
+	DeferredItem<BlockItem> CREATIVE_IRRIGATION_TANK = ITEMS.register("creative_irrigation_tank", () -> new BlockItem(AgriBlocks.CREATIVE_IRRIGATION_TANK.get(), new Item.Properties()));
+	DeferredItem<BlockItem> IRRIGATION_CHANNEL = ITEMS.register("irrigation_channel", () -> new BlockItem(AgriBlocks.IRRIGATION_CHANNEL.get(), new Item.Properties()));
+	DeferredItem<BlockItem> IRRIGATION_CHANNEL_HOLLOW = ITEMS.register("irrigation_channel_hollow", () -> new BlockItem(AgriBlocks.IRRIGATION_CHANNEL_HOLLOW.get(), new Item.Properties()));
+	DeferredItem<BlockItem> SPRINKLER = ITEMS.register("sprinkler", () -> new BlockItem(AgriBlocks.SPRINKLER.get(), new Item.Properties()));
+	DeferredItem<Item> CHANNEL_VALVE = ITEMS.register("agri_channel_valve", () -> new Item(new Item.Properties()));
+
 	DeferredItem<DebuggerItem> DEBUGGER = ITEMS.register("debugger", () -> new DebuggerItem(new Item.Properties()));
 
 	DeferredItem<JournalItem> JOURNAL = ITEMS.register("journal", () -> new JournalItem(new Item.Properties().component(AgriDataComponents.JOURNAL_DATA.get(), new JournalItem.Data())));
@@ -60,6 +67,13 @@ public interface AgriItems {
 		output.accept(IRON_CROP_STICKS.get());
 		output.accept(OBSIDIAN_CROP_STICKS.get());
 		output.accept(SEED_BAG.get());
+		output.accept(IRRIGATION_TANK.get());
+		output.accept(CREATIVE_IRRIGATION_TANK.get());
+		output.accept(IRRIGATION_CHANNEL.get());
+		output.accept(IRRIGATION_CHANNEL_HOLLOW.get());
+		output.accept(SPRINKLER.get());
+		output.accept(CHANNEL_VALVE.get());
+
 
 		output.accept(COAL_PEBBLE.get());
 		output.accept(COPPER_NUGGET.get());

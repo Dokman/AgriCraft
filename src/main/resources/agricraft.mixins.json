@@ -5,11 +5,13 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "FarmersDelightMixin",
-    "ItemEntityMixin"
+    "ItemEntityMixin",
+    "IrrigationBucketItemMixin",
+    "create.HarvesterMovementBehaviourMixin"
   ],
   "client": [],
   "server": [],
   "injectors": {
     "defaultRequire": 1
-	}
+  }
 }

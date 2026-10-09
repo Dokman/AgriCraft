@@ -3,3 +3,9 @@
 build/
 runs/
 src/generated/
+
+# Build output retained from the Forge checkout
+/common/
+/forge/
+/port-*.log
+/logs/

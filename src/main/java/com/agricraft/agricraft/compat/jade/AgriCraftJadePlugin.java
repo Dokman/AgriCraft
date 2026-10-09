@@ -24,9 +24,15 @@ import java.util.Optional;
 public class AgriCraftJadePlugin implements IWailaPlugin {
 
 	@Override
+	public void register(snownee.jade.api.IWailaCommonRegistration registration) {
+		registration.registerBlockDataProvider(IrrigationComponentProvider.INSTANCE, com.agricraft.agricraft.common.block.entity.IrrigationBlockEntity.class);
+	}
+
+	@Override
 	public void registerClient(IWailaClientRegistration registration) {
 		registration.registerBlockComponent(CropBlockComponentProvider.INSTANCE, CropBlock.class);
 		registration.registerBlockComponent(SoilComponentProvider.INSTANCE, Block.class);
+		registration.registerBlockComponent(IrrigationComponentProvider.INSTANCE, com.agricraft.agricraft.common.block.IrrigationBlock.class);
 	}
 
 	public static class CropBlockComponentProvider implements IBlockComponentProvider {

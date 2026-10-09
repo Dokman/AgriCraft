@@ -149,3 +149,44 @@ idea {
 		downloadJavadoc = true
 	}
 }
+
+tasks.register('irrigationFlowTest', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.agricraft.agricraft.common.block.entity.IrrigationFlowTest'
+    enableAssertions = true
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(21) }
+}
+
+tasks.register('irrigationBucketsTest', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.agricraft.agricraft.common.block.entity.IrrigationBucketsTest'
+    enableAssertions = true
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(21) }
+}
+
+check.dependsOn irrigationFlowTest, irrigationBucketsTest
+
+configurations.testCompileOnly.extendsFrom configurations.compileOnly
+
+
+tasks.register('jadeIrrigationTest', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.agricraft.agricraft.compat.jade.IrrigationComponentProviderTest'
+    enableAssertions = true
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(21) }
+}
+check.dependsOn jadeIrrigationTest
+
+dependencies { testRuntimeOnly "curse.maven:jade-324717:5427895" }
+
+tasks.register('creativeIrrigationTest', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.agricraft.agricraft.common.block.entity.CreativeIrrigationTest'
+    enableAssertions = true
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(21) }
+}
+check.dependsOn creativeIrrigationTest
