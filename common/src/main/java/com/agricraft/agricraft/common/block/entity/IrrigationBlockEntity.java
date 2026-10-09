@@ -102,6 +102,32 @@ public class IrrigationBlockEntity extends BlockEntity implements IrrigationRese
 
     public boolean transferBucket(boolean filling) {
         if (level == null || level.isClientSide || !(block() instanceof IrrigationTankBlock)) return false;
+        List<IrrigationBlockEntity> tanks = connectedTankMembers();
+        boolean transferred = IrrigationBuckets.transfer(tanks, filling);
+        if (transferred) {
+            IrrigationReservoir.balance(tanks);
+            TANK_LEVELS.remove(level);
+        }
+        return transferred;
+    }
+
+    public record DisplayContents(long water, long capacity, int members) { }
+
+    /** Read-only totals for overlays. Do not load chunks or rebalance water when inspecting. */
+    public DisplayContents getDisplayContents() {
+        if (!(block() instanceof IrrigationTankBlock) || level == null) {
+            return new DisplayContents(water, getCapacity(), 1);
+        }
+        List<IrrigationBlockEntity> tanks = connectedTankMembers();
+        long contents = 0, capacity = 0;
+        for (IrrigationBlockEntity tank : tanks) {
+            contents += tank.getWater();
+            capacity += tank.getCapacity();
+        }
+        return new DisplayContents(contents, capacity, tanks.size());
+    }
+
+    private List<IrrigationBlockEntity> connectedTankMembers() {
         List<IrrigationBlockEntity> tanks = new ArrayList<>();
         ArrayDeque<IrrigationBlockEntity> pending = new ArrayDeque<>();
         HashSet<BlockPos> visited = new HashSet<>();
@@ -117,12 +143,7 @@ public class IrrigationBlockEntity extends BlockEntity implements IrrigationRese
                         && other.block() instanceof IrrigationTankBlock) pending.add(other);
             }
         }
-        boolean transferred = IrrigationBuckets.transfer(tanks, filling);
-        if (transferred) {
-            IrrigationReservoir.balance(tanks);
-            TANK_LEVELS.remove(level);
-        }
-        return transferred;
+        return tanks;
     }
 
     public void changeWater(int amount) {
@@ -134,6 +155,8 @@ public class IrrigationBlockEntity extends BlockEntity implements IrrigationRese
         BlockState state = getBlockState();
         return state.getValue(IrrigationBlock.VALVE) && (state.getValue(IrrigationBlock.CLOSED) || level.hasNeighborSignal(worldPosition));
     }
+
+    public boolean isValveClosed() { return closed(); }
 
     public static void tick(Level level, BlockPos pos, BlockState state, IrrigationBlockEntity entity) {
         if (entity.block().kind == IrrigationBlock.Kind.SPRINKLER) {

@@ -7,6 +7,8 @@ import com.agricraft.agricraft.api.requirement.AgriGrowthConditionRegistry;
 import com.agricraft.agricraft.api.requirement.AgriGrowthResponse;
 import com.agricraft.agricraft.api.stat.AgriStatRegistry;
 import com.agricraft.agricraft.common.block.CropBlock;
+import com.agricraft.agricraft.common.block.IrrigationBlock;
+import com.agricraft.agricraft.common.block.entity.IrrigationBlockEntity;
 import com.agricraft.agricraft.common.util.LangUtils;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -21,8 +23,14 @@ import java.util.Optional;
 public class AgriCraftJadePlugin implements IWailaPlugin {
 
 	@Override
+	public void register(IWailaCommonRegistration registration) {
+		registration.registerBlockDataProvider(IrrigationComponentProvider.INSTANCE, IrrigationBlockEntity.class);
+	}
+
+	@Override
 	public void registerClient(IWailaClientRegistration registration) {
 		registration.registerBlockComponent(CropBlockComponentProvider.INSTANCE, CropBlock.class);
+		registration.registerBlockComponent(IrrigationComponentProvider.INSTANCE, IrrigationBlock.class);
 		registration.registerBlockComponent(SoilComponentProvider.INSTANCE, Block.class);
 	}
 

@@ -387,5 +387,10 @@
   "agricraft.irrigation.contents": "Agua: %s / %s mB",
   "config.agricraft.irrigation": "Riego",
   "config.agricraft.irrigation.water_per_tick": "Consumo de agua del aspersor por tick",
-  "config.agricraft.irrigation.growth_chance": "Probabilidad de crecimiento del aspersor"
+  "config.agricraft.irrigation.growth_chance": "Probabilidad de crecimiento del aspersor",
+  "config.jade.plugin_agricraft.irrigation": "Riego",
+  "agricraft.tooltip.jade.irrigation.valve.open": "Válvula: Abierta",
+  "agricraft.tooltip.jade.irrigation.valve.closed": "Válvula: Cerrada",
+  "agricraft.tooltip.jade.irrigation.sprinkler.active": "Aspersor: Regando",
+  "agricraft.tooltip.jade.irrigation.sprinkler.inactive": "Aspersor: Detenido"
 }

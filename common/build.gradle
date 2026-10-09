@@ -51,8 +51,17 @@ tasks.register('irrigationBucketsTest', JavaExec) {
 }
 
 tasks.named('check') {
+	dependsOn tasks.named('irrigationJadeTest')
 	dependsOn tasks.named('irrigationFlowTest')
 	dependsOn tasks.named('irrigationTankTest')
 	dependsOn tasks.named('createHarvestTest')
 	dependsOn tasks.named('irrigationBucketsTest')
+}
+
+tasks.register('irrigationJadeTest', JavaExec) {
+	dependsOn testClasses
+	// Jade remains optional in production; this test needs its mapped compile-only API.
+	classpath = sourceSets.test.runtimeClasspath + sourceSets.main.compileClasspath
+	mainClass = 'com.agricraft.agricraft.compat.jade.IrrigationComponentProviderTest'
+	jvmArgs '-ea'
 }

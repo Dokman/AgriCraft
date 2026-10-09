@@ -406,5 +406,10 @@
   "agricraft.irrigation.contents": "Water: %s / %s mB",
   "config.agricraft.irrigation": "Irrigation",
   "config.agricraft.irrigation.water_per_tick": "Sprinkler water consumption per tick",
-  "config.agricraft.irrigation.growth_chance": "Sprinkler growth chance"
+  "config.agricraft.irrigation.growth_chance": "Sprinkler growth chance",
+  "config.jade.plugin_agricraft.irrigation": "Irrigation",
+  "agricraft.tooltip.jade.irrigation.valve.open": "Valve: Open",
+  "agricraft.tooltip.jade.irrigation.valve.closed": "Valve: Closed",
+  "agricraft.tooltip.jade.irrigation.sprinkler.active": "Sprinkler: Irrigating",
+  "agricraft.tooltip.jade.irrigation.sprinkler.inactive": "Sprinkler: Stopped"
 }
