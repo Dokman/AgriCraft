@@ -4,6 +4,7 @@
     "agricraft:irrigation_tank",
     "agricraft:irrigation_channel",
     "agricraft:irrigation_channel_hollow",
-    "agricraft:sprinkler"
+    "agricraft:sprinkler",
+    "agricraft:creative_irrigation_tank"
   ]
 }

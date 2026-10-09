@@ -26,6 +26,7 @@ public class ModItems {
 	public static final PlatformRegistry.Entry<Item> JOURNAL = ITEMS.register("journal", () -> new JournalItem(new Item.Properties()));
 	public static final PlatformRegistry.Entry<Item> SEED_ANALYZER = ITEMS.register("seed_analyzer", () -> new BlockItem(ModBlocks.SEED_ANALYZER.get(), new Item.Properties()));
 	public static final PlatformRegistry.Entry<Item> IRRIGATION_TANK = ITEMS.register("irrigation_tank", () -> new BlockItem(ModBlocks.IRRIGATION_TANK.get(), new Item.Properties()));
+	public static final PlatformRegistry.Entry<Item> CREATIVE_IRRIGATION_TANK = ITEMS.register("creative_irrigation_tank", () -> new BlockItem(ModBlocks.CREATIVE_IRRIGATION_TANK.get(), new Item.Properties()));
 	public static final PlatformRegistry.Entry<Item> IRRIGATION_CHANNEL = ITEMS.register("irrigation_channel", () -> new BlockItem(ModBlocks.IRRIGATION_CHANNEL.get(), new Item.Properties()));
 	public static final PlatformRegistry.Entry<Item> IRRIGATION_CHANNEL_HOLLOW = ITEMS.register("irrigation_channel_hollow", () -> new BlockItem(ModBlocks.IRRIGATION_CHANNEL_HOLLOW.get(), new Item.Properties()));
 	public static final PlatformRegistry.Entry<Item> SPRINKLER = ITEMS.register("sprinkler", () -> new BlockItem(ModBlocks.SPRINKLER.get(), new Item.Properties()));
@@ -56,6 +57,7 @@ public class ModItems {
 		output.accept(JOURNAL.get().getDefaultInstance());
 		output.accept(SEED_ANALYZER.get());
 		output.accept(IRRIGATION_TANK.get());
+		output.accept(CREATIVE_IRRIGATION_TANK.get());
 		output.accept(IRRIGATION_CHANNEL.get());
 		output.accept(IRRIGATION_CHANNEL_HOLLOW.get());
 		output.accept(SPRINKLER.get());

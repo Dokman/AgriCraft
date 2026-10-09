@@ -9,13 +9,17 @@ public final class IrrigationReservoir {
 
     public interface Member extends IrrigationBuckets.Tank {
         int getTankY();
+        default boolean isCreativeSource() { return false; }
+        default void setInfiniteSupply(boolean infinite) { }
     }
 
     public static void balance(List<? extends Member> tanks) {
+        boolean infinite = tanks.stream().anyMatch(Member::isCreativeSource);
         long remaining = 0;
         TreeMap<Integer, java.util.ArrayList<Member>> layers = new TreeMap<>();
         for (Member tank : tanks) {
-            remaining += tank.getWater();
+            tank.setInfiniteSupply(infinite);
+            remaining += infinite ? tank.getCapacity() : tank.getWater();
             layers.computeIfAbsent(tank.getTankY(), unused -> new java.util.ArrayList<>()).add(tank);
         }
         for (var layer : layers.values()) {

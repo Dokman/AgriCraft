@@ -27,6 +27,7 @@ import java.util.List;
 
 public class IrrigationBlockEntity extends BlockEntity implements IrrigationReservoir.Member {
     private int water;
+    private boolean infiniteSupply;
     private int column;
     private float sprinklerAngle;
     private float previousSprinklerAngle;
@@ -93,7 +94,11 @@ public class IrrigationBlockEntity extends BlockEntity implements IrrigationRese
     public IrrigationBlockEntity(BlockPos pos, BlockState state) { super(ModBlockEntityTypes.IRRIGATION.get(), pos, state); }
     private IrrigationBlock block() { return (IrrigationBlock) getBlockState().getBlock(); }
     public int getCapacity() { return block().kind == IrrigationBlock.Kind.TANK ? 16000 : block().isChannel() ? 500 : 0; }
-    public int getWater() { return water; }
+    public int getWater() { return isCreativeSource() ? getCapacity() : water; }
+    @Override
+    public boolean isCreativeSource() { return block() instanceof com.agricraft.agricraft.common.block.CreativeIrrigationTankBlock; }
+    @Override
+    public void setInfiniteSupply(boolean infinite) { infiniteSupply = infinite; }
     public int getTankY() { return worldPosition.getY(); }
 
     public static void invalidateTankLevels(Level level) {
@@ -103,6 +108,7 @@ public class IrrigationBlockEntity extends BlockEntity implements IrrigationRese
     public boolean transferBucket(boolean filling) {
         if (level == null || level.isClientSide || !(block() instanceof IrrigationTankBlock)) return false;
         List<IrrigationBlockEntity> tanks = connectedTankMembers();
+        IrrigationReservoir.balance(tanks);
         boolean transferred = IrrigationBuckets.transfer(tanks, filling);
         if (transferred) {
             IrrigationReservoir.balance(tanks);
@@ -147,7 +153,7 @@ public class IrrigationBlockEntity extends BlockEntity implements IrrigationRese
     }
 
     public void changeWater(int amount) {
-        water = Math.max(0, Math.min(getCapacity(), water + amount));
+        water = infiniteSupply || isCreativeSource() ? getCapacity() : Math.max(0, Math.min(getCapacity(), water + amount));
         setChanged();
     }
 
@@ -164,7 +170,10 @@ public class IrrigationBlockEntity extends BlockEntity implements IrrigationRese
             return;
         }
         // Refresh existing saves too: their old tank states had no connection information.
-        if (entity.block() instanceof IrrigationTankBlock tank) state = tank.connections(state, level, pos);
+        if (entity.block() instanceof IrrigationTankBlock tank) {
+            state = tank.connections(state, level, pos);
+            entity.tankVisibleLevel(level, pos);
+        }
         if (entity.block().kind == IrrigationBlock.Kind.TANK && level.getGameTime() % 20 == 0 && level.isRainingAt(pos.above())) entity.changeWater(25);
         boolean blocked = entity.closed();
         if (!blocked) {

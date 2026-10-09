@@ -65,3 +65,11 @@ tasks.register('irrigationJadeTest', JavaExec) {
 	mainClass = 'com.agricraft.agricraft.compat.jade.IrrigationComponentProviderTest'
 	jvmArgs '-ea'
 }
+
+tasks.register('creativeIrrigationTest', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.agricraft.agricraft.common.block.entity.CreativeIrrigationTest'
+    enableAssertions = true
+}
+check.dependsOn creativeIrrigationTest

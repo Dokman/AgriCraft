@@ -1,10 +1,8 @@
 {
   "itemGroup.agricraft.main": "AgriCraft",
   "itemGroup.agricraft.seeds": "AgriCraft Seeds",
-
   "block.agricraft.seed_analyzer": "Seed Analyzer",
   "block.agricraft.crop": "Crop Sticks",
-
   "item.agricraft.debugger": "Debugger",
   "item.agricraft.journal": "Agricultural Journal",
   "item.agricraft.clipper": "Plant Clipper",
@@ -23,10 +21,8 @@
   "item.agricraft.quartz_shard": "Quartz Shard",
   "item.agricraft.netherite_sliver": "Netherite Sliver",
   "item.agricraft.amathyllis_petal": "Amathyllis Petal",
-
   "screen.agricraft.journal": "Agricultural Journal",
   "screen.agricraft.seed_analyzer": "Seed Analyzer",
-
   "agricraft.stat.gain": "Gain",
   "agricraft.stat.growth": "Growth",
   "agricraft.stat.strength": "Strength",
@@ -34,7 +30,6 @@
   "agricraft.stat.fertility": "Fertility",
   "agricraft.stat.mutativity": "Mutativity",
   "agricraft.gene.species": "Species",
-
   "agricraft.soil.humidity.arid": "Arid",
   "agricraft.soil.humidity.dry": "Dry",
   "agricraft.soil.humidity.damp": "Damp",
@@ -54,12 +49,10 @@
   "agricraft.soil.nutrients.medium": "Medium",
   "agricraft.soil.nutrients.high": "High",
   "agricraft.soil.nutrients.very_high": "Very High",
-
   "agricraft.season.spring": "Spring",
   "agricraft.season.summer": "Summer",
   "agricraft.season.autumn": "Autumn",
   "agricraft.season.winter": "Winter",
-
   "agricraft.journal.introduction": "Introduction",
   "agricraft.journal.introduction.paragraph_1": "This is your very own Agricultural Journal, in here you can keep track of all the seeds you have discovered. To get started, simply place the journal on a seed analyzer and start analyzing seeds!",
   "agricraft.journal.introduction.paragraph_2": "When analyzing the genome of a seed, you learn one or two things about it, such as what kind of environments it likes, how it will grow, what fruits it might bear, and to and from which other species it might mutate.",
@@ -98,7 +91,6 @@
   "agricraft.journal.growth_stages": "Growth stages",
   "agricraft.journal.products": "Crop Products",
   "agricraft.journal.mutations": "Crop Mutations",
-
   "agricraft.tooltip.journal": "%d researched plants",
   "agricraft.tooltip.magnifying": "Magnifying",
   "agricraft.tooltip.magnifying.crop": "Crop Information:",
@@ -159,12 +151,9 @@
   "agricraft.tooltip.jade.stat.fertility": "Fertility: %d",
   "agricraft.tooltip.jade.stat.mutativity": "Mutativity: %d",
   "agricraft.tooltip.jade.growth": "Growth: %d%%",
-
-
   "agricraft.command.seed_default": "Gave %s as a seed",
   "agricraft.command.seed_all": "Gave %s as a seed with all stats at %d",
   "agricraft.command.seed_distinct": "Gave %s as a seed with stats %s",
-
   "config.agricraft.core": "Core",
   "config.agricraft.core.register_packs_by_default": "Register mod compatibility packs by default",
   "config.agricraft.core.plant_off_crop_sticks": "Plant outside crop sticks",
@@ -202,12 +191,10 @@
   "config.agricraft.compat.mysticalagriculture": "Enable Mystical Agriculture compat",
   "config.agricraft.compat.pneumaticcraft": "Enable PneumaticCraft compat",
   "config.agricraft.compat.industrialforegoing": "Enable Industrial Foregoing compat",
-
   "agricraft.message.clipping_impossible": "There is nothing worth clipping here.",
   "agricraft.message.trowel_weed": "I can not reach well, I should remove the weeds first.",
   "agricraft.message.trowel_plant": "There already is a plant here.",
   "agricraft.message.trowel_no_plant": "There is nothing here to grab.",
-
   "agricraft.gui.jei.produce": "Plant Products",
   "agricraft.gui.jei.clipping": "Plant Clipping",
   "agricraft.gui.jei.mutation": "Plant Mutation",
@@ -216,7 +203,6 @@
   "emi.category.agricraft.produce": "Plant Products",
   "emi.category.agricraft.clipping": "Plant Clipping",
   "emi.category.agricraft.requirement": "Growth Requirements",
-
   "soil.agricraft.minecraft.clay": "Clay",
   "soil.agricraft.minecraft.crimsum_nylium": "Crimsum Nylium",
   "soil.agricraft.minecraft.farmland": "Farmland",
@@ -227,7 +213,6 @@
   "soil.agricraft.minecraft.soul_soil": "Soul Soil",
   "soil.agricraft.minecraft.warped_nylium": "Warped Nylium",
   "soil.agricraft.agricraft.gravel": "Gravel",
-
   "plant.agricraft.agricraft.unknown": "Unknown",
   "plant.agricraft.minecraft.allium": "Allium",
   "plant.agricraft.minecraft.azure_bluet": "Azure Bluet",
@@ -279,7 +264,6 @@
   "plant.agricraft.agricraft.plombean": "Plombean",
   "plant.agricraft.agricraft.quartzanthemum": "Quartzanthemum",
   "plant.agricraft.agricraft.redstodendron": "Redstodendron",
-
   "seed.agricraft.agricraft.unknown": "Unknown Seeds",
   "seed.agricraft.minecraft.allium": "Allium Seeds",
   "seed.agricraft.minecraft.azure_bluet": "Azure Bluet Seeds",
@@ -331,7 +315,6 @@
   "seed.agricraft.agricraft.plombean": "Plombean Seeds",
   "seed.agricraft.agricraft.quartzanthemum": "Quartzanthemum Seeds",
   "seed.agricraft.agricraft.redstodendron": "Redstodendron Seeds",
-
   "description.agricraft.agricraft.unknown": "This plant is unknown",
   "description.agricraft.minecraft.allium": "From the family of plants including the garlic, onion, and chive this plant produces a beautiful umbel consisting of many small purple blooms.",
   "description.agricraft.minecraft.azure_bluet": "Delicate ladies.",
@@ -383,9 +366,7 @@
   "description.agricraft.agricraft.plombean": "In ancient times this plant was thought to bear a lifegiving fruit. Nowadays we know better.",
   "description.agricraft.agricraft.quartzanthemum": "A surprisingly crystalline plant.",
   "description.agricraft.agricraft.redstodendron": "Much more complex than the average red algae.",
-
   "weed.agricraft.agricraft.weed": "Weed",
-
   "agricraft.datapacks.biomesoplenty": "Biomes O'Plenty extra crops (data)",
   "agricraft.resourcepacks.biomesoplenty": "Biomes O'Plenty extra crops (resources)",
   "agricraft.datapacks.botania": "Botania extra crops (data)",
@@ -411,5 +392,6 @@
   "agricraft.tooltip.jade.irrigation.valve.open": "Valve: Open",
   "agricraft.tooltip.jade.irrigation.valve.closed": "Valve: Closed",
   "agricraft.tooltip.jade.irrigation.sprinkler.active": "Sprinkler: Irrigating",
-  "agricraft.tooltip.jade.irrigation.sprinkler.inactive": "Sprinkler: Stopped"
+  "agricraft.tooltip.jade.irrigation.sprinkler.inactive": "Sprinkler: Stopped",
+  "block.agricraft.creative_irrigation_tank": "Creative Water Tank"
 }

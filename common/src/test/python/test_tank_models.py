@@ -34,6 +34,13 @@ def rectangles(state, block="irrigation_tank"):
 
 
 class TankModelsTest(unittest.TestCase):
+    def test_creative_tank_preserves_connected_geometry(self):
+        for joins in itertools.product(("false", "true"), repeat=5):
+            for water in range(17):
+                state = dict(zip(("north", "east", "south", "west", "down"), joins))
+                state["water"] = str(water)
+                self.assertEqual(list(rectangles(state)), list(rectangles(state, "creative_irrigation_tank")))
+
     def test_channel_water_closes_height_steps(self):
         # A thin surface leaves an air gap where a full valve channel meets an
         # almost-empty channel. Water must extend down to the channel floor.
