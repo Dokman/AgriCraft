@@ -4,6 +4,18 @@ build/
 **/build/
 **/run/
 out/
-forge/src/generated/
+# Keep generated base registries/models and the bundled Pam's compatibility packs
+# available in clean checkouts. Other optional packs and datagen caches stay local.
+forge/src/generated/*
+!forge/src/generated/resources/
+forge/src/generated/resources/*
+!forge/src/generated/resources/data/
+!forge/src/generated/resources/assets/
+!forge/src/generated/resources/datapacks/
+!forge/src/generated/resources/resourcepacks/
+forge/src/generated/resources/datapacks/*
+!forge/src/generated/resources/datapacks/pamhc2crops/
+forge/src/generated/resources/resourcepacks/*
+!forge/src/generated/resources/resourcepacks/pamhc2crops/
 neoforge/src/generated/
 .architectury-transformer/

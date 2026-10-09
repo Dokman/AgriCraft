@@ -99,7 +99,7 @@ public class MutationsDatagen {
 		pamhc2crops(context, "celery", "minecraft:wheat", "pamhc2crops:soybean");
 		pamhc2crops(context, "chickpea", "pamhc2crops:peas", "pamhc2crops:cabbage");
 		pamhc2crops(context, "chilipepper", "pamhc2crops:tomato", "pamhc2crops:onion");
-		pamhc2crops(context, "cofeebean", "pamhc2crops:bean", "minecraft:sugar_cane");
+		pamhc2crops(context, "coffeebean", "pamhc2crops:bean", "minecraft:sugar_cane");
 		pamhc2crops(context, "corn", "pamhc2crops:barley", "pamhc2crops:rye");
 		pamhc2crops(context, "cotton", "pamhc2crops:barley", "pamhc2crops:soybean");
 		pamhc2crops(context, "cranberry", "pamhc2crops:blueberry", "pamhc2crops:grape");
@@ -140,7 +140,7 @@ public class MutationsDatagen {
 		pamhc2crops(context, "rutabaga", "minecraft:beetroot", "pamhc2crops:turnip");
 		pamhc2crops(context, "rye", "pamhc2crops:barley", "minecraft:wheat");
 		pamhc2crops(context, "scallion", "minecraft:carrot", "minecraft:sugar_cane");
-		pamhc2crops(context, "sesameseeds", "pamhc2crops:rice", "pamhc2crops:cofeebean");
+		pamhc2crops(context, "sesameseeds", "pamhc2crops:rice", "pamhc2crops:coffeebean");
 		pamhc2crops(context, "sisal", "pamhc2crops:agave", "minecraft:cactus");
 		pamhc2crops(context, "soybean", "pamhc2crops:bean", "pamhc2crops:rice");
 		pamhc2crops(context, "spiceleaf", "pamhc2crops:tealeaf", "pamhc2crops:chilipepper");
@@ -154,14 +154,14 @@ public class MutationsDatagen {
 		pamhc2crops(context, "turnip", "pamhc2crops:parsnip", "pamhc2crops:radish");
 		pamhc2crops(context, "waterchestnut", "pamhc2crops:sesameseeds", "minecraft:seagrass");
 		pamhc2crops(context, "whitemushroom", "minecraft:red_mushroom", "minecraft:brown_mushroom");
-		pamhc2crops(context, "wintersquach", "minecraft:pumpkin", "pamhc2crops:zucchini");
+		pamhc2crops(context, "wintersquash", "minecraft:pumpkin", "pamhc2crops:zucchini");
 		pamhc2crops(context, "zucchini", "minecraft:pumpkin", "pamhc2crops:cucumber");
 		pamhc2crops(context, "alfalfa", "pamhc2crops:sesameseeds", "pamhc2crops:spinach");
 		pamhc2crops(context, "aloe", "minecraft:cactus", "pamhc2crops:agave");
 		pamhc2crops(context, "barrelcactus", "minecraft:cactus", "pamhc2crops:cactusfruit");
 		pamhc2crops(context, "canola", "minecraft:wheat", "pamhc2crops:millet");
 		pamhc2crops(context, "cattail", "minecraft:seagrass", "minecraft:wheat");
-		pamhc2crops(context, "chia", "minecraft:millet", "pamhc2crops:canola");
+		pamhc2crops(context, "chia", "pamhc2crops:millet", "pamhc2crops:canola");
 		pamhc2crops(context, "cloudberry", "minecraft:sweet_berries", "pamhc2crops:mulberry");
 		pamhc2crops(context, "lotus", "minecraft:seagrass", "minecraft:pink_tulip");
 		pamhc2crops(context, "nettles", "pamhc2crops:tealeaf", "pamhc2crops:spinach");
@@ -171,7 +171,7 @@ public class MutationsDatagen {
 		pamhc2crops(context, "wolfberry", "pamhc2crops:cloudberry", "pamhc2crops:strawberry");
 		pamhc2crops(context, "yucca", "pamhc2crops:aloe", "pamhc2crops:agave");
 		pamhc2crops(context, "bokchoy", "pamhc2crops:kale", "pamhc2crops:leek");
-		pamhc2crops(context, "calabash", "minecraft:pumpkin", "pamhc2crops:wintersquach");
+		pamhc2crops(context, "calabash", "minecraft:pumpkin", "pamhc2crops:wintersquash");
 		pamhc2crops(context, "guarana", "pamhc2crops:cloudberry", "pamhc2crops:tomatillo");
 		pamhc2crops(context, "papyrus", "pamhc2crops:cattail", "minecraft:sugar_cane");
 		pamhc2crops(context, "sunchoke", "pamhc2crops:artichoke", "pamhc2crops:parsnip");
