@@ -4,6 +4,7 @@ build/
 **/build/
 **/run/
 out/
+common/logs/*
 # Keep generated base registries/models and the bundled Pam's compatibility packs
 # available in clean checkouts. Other optional packs and datagen caches stay local.
 forge/src/generated/*
