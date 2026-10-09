@@ -116,7 +116,9 @@ public class IrrigationBlock extends Block implements EntityBlock {
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        if (kind == Kind.SPRINKLER) return Shapes.or(box(3, 4, 3, 13, 16, 13), box(5, 15, 5, 11, 21, 11));
+        if (kind == Kind.SPRINKLER) return Shapes.or(box(6.5, 4, 6.5, 9.5, 15, 9.5),
+                box(3.5, 5, 7.5, 12.5, 6, 8.5), box(7.5, 5, 3.5, 8.5, 6, 12.5),
+                box(5, 15, 5, 11, 21, 11));
         VoxelShape shape = Shapes.or(box(5, 5, 5, 11, 6, 11), box(5, 6, 5, 6, 11, 6),
                 box(10, 6, 5, 11, 11, 6), box(5, 6, 10, 6, 11, 11), box(10, 6, 10, 11, 11, 11));
         BooleanProperty[] sides = {NORTH, EAST, SOUTH, WEST};

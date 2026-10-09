@@ -47,21 +47,28 @@ public class SprinklerBlockEntityRenderer implements BlockEntityRenderer<Irrigat
         if (minecraft.player == null || minecraft.player.distanceToSqr(pos.getX() + .5,
                 pos.getY() + .35, pos.getZ() + .5) > 32 * 32) return;
         ParticleStatus setting = minecraft.options.particles().get();
-        int interval = setting == ParticleStatus.MINIMAL ? 8 : setting == ParticleStatus.DECREASED ? 4 : 2;
+        int interval = setting == ParticleStatus.MINIMAL ? 8 : setting == ParticleStatus.DECREASED ? 3 : 1;
         if (level.getGameTime() % interval != 0) return;
         double angle = -Math.toRadians(entity.getSprinklerAngle(1));
         boolean vapour = level.dimensionType().ultraWarm();
         for (int arm = 0; arm < 4; arm++) {
             double dx = Math.cos(angle + arm * Math.PI / 2), dz = Math.sin(angle + arm * Math.PI / 2);
-            for (int drop = 0; drop < (vapour ? 1 : 3); drop++) {
+            for (int drop = 0; drop < (vapour ? 1 : 4); drop++) {
                 var particle = minecraft.particleEngine.createParticle(vapour ? ParticleTypes.CLOUD : ParticleTypes.FALLING_WATER,
-                        pos.getX() + .5 + dx * .28, pos.getY() + .35, pos.getZ() + .5 + dz * .28,
+                        pos.getX() + .5 + dx * .32, pos.getY() + .30, pos.getZ() + .5 + dz * .32,
                         0, 0, 0);
                 // Drip particles initialize their own speed; explicitly supply the jet's
                 // velocity so drops leave the head, fall under gravity and collide below.
                 if (particle != null) {
-                    double speed = .12 + drop * .10;
-                    particle.setParticleSpeed(dx * speed, vapour ? .10 : -.025 - drop * .055, dz * speed);
+                    // Fan out to different distances rather than piling drops on one ray.
+                    double spread = (drop - 1.5) * .055;
+                    double jetX = dx * Math.cos(spread) - dz * Math.sin(spread);
+                    double jetZ = dx * Math.sin(spread) + dz * Math.cos(spread);
+                    double speed = .14 + drop * .055;
+                    if (!vapour) {
+                        particle.setColor(.18F, .48F, .95F);
+                    }
+                    particle.setParticleSpeed(jetX * speed, vapour ? .10 : -.025 - drop * .035, jetZ * speed);
                 }
             }
         }

@@ -114,6 +114,16 @@ public class IrrigationTankBlockTest {
         }
         shape = sprinkler.getShape(sprinkler.defaultBlockState(), world, origin, CollisionContext.empty());
         assert contains(shape, .5, 20.5/16, .5) : "The sprinkler attachment must reach the channel floor at y=21";
+        // Water jets must start outside the sprinkler itself at every rotation angle.
+        // Vanilla falling-water particles have a 0.01-block collision box.
+        for (int angle = 0; angle < 360; angle++) {
+            double x = .5 + .32 * Math.cos(Math.toRadians(angle));
+            double z = .5 + .32 * Math.sin(Math.toRadians(angle));
+            var drop = new net.minecraft.world.phys.AABB(x - .005, .30, z - .005,
+                    x + .005, .31, z + .005);
+            assert shape.toAabbs().stream().noneMatch(box -> box.intersects(drop))
+                    : "The sprinkler must not obstruct its own water jet at " + angle;
+        }
         System.out.println("Connected tanks: adjacency, 3x3 interior walls, removal, channels and stacked floors passed.");
     }
 }
