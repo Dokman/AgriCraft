@@ -34,6 +34,19 @@ def rectangles(state, block="irrigation_tank"):
 
 
 class TankModelsTest(unittest.TestCase):
+    def test_channel_water_closes_height_steps(self):
+        # A thin surface leaves an air gap where a full valve channel meets an
+        # almost-empty channel. Water must extend down to the channel floor.
+        for kind in ("arm", "channel"):
+            for level in range(1, 5):
+                model = json.loads((ASSETS / f"models/block/irrigation/{kind}_water_{level}.json").read_text())
+                for element in model["elements"]:
+                    self.assertAlmostEqual(element["from"][1], 6.01)
+                    self.assertEqual(element["to"][1], 6 + level)
+                    for side in ("north", "south", "east", "west"):
+                        self.assertEqual(element["faces"][side]["texture"], "#water")
+                        self.assertNotIn("cullface", element["faces"][side])
+
     def test_all_connections_and_fill_levels(self):
         for connections in itertools.product([False, True], repeat=4):
             north, east, south, west = connections
