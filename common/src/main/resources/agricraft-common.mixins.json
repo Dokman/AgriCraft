@@ -5,7 +5,9 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"BlockStateBaseMixin",
-		"ItemEntityMixin"
+		"ItemEntityMixin",
+		"IrrigationBucketItemMixin",
+		"create.HarvesterMovementBehaviourMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

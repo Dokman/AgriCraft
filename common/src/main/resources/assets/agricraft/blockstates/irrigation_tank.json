@@ -1,0 +1,1722 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "down": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_bottom",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "north": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_wall",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "OR": [
+          {
+            "north": "false"
+          },
+          {
+            "west": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_corner",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_wall",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "OR": [
+          {
+            "east": "false"
+          },
+          {
+            "north": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_corner",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_wall",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "OR": [
+          {
+            "south": "false"
+          },
+          {
+            "east": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_corner",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_wall",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "OR": [
+          {
+            "west": "false"
+          },
+          {
+            "south": "false"
+          }
+        ]
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_corner",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "1"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_1"
+      }
+    },
+    {
+      "when": {
+        "water": "1",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_1",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "1",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_1",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "1",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_1",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "1",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_1",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "1",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_1",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "1",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_1",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "1",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_1",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "1",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_1",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "2"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_2"
+      }
+    },
+    {
+      "when": {
+        "water": "2",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_2",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "2",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_2",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "2",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_2",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "2",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_2",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "2",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_2",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "2",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_2",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "2",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_2",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "2",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_2",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "3"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_3"
+      }
+    },
+    {
+      "when": {
+        "water": "3",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_3",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "3",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_3",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "3",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_3",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "3",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_3",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "3",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_3",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "3",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_3",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "3",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_3",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "3",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_3",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "4"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_4"
+      }
+    },
+    {
+      "when": {
+        "water": "4",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_4",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "4",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_4",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "4",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_4",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "4",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_4",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "4",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_4",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "4",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_4",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "4",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_4",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "4",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_4",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "5"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_5"
+      }
+    },
+    {
+      "when": {
+        "water": "5",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_5",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "5",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_5",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "5",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_5",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "5",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_5",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "5",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_5",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "5",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_5",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "5",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_5",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "5",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_5",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "6"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_6"
+      }
+    },
+    {
+      "when": {
+        "water": "6",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_6",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "6",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_6",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "6",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_6",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "6",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_6",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "6",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_6",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "6",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_6",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "6",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_6",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "6",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_6",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "7"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_7"
+      }
+    },
+    {
+      "when": {
+        "water": "7",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_7",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "7",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_7",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "7",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_7",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "7",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_7",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "7",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_7",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "7",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_7",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "7",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_7",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "7",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_7",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "8"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_8"
+      }
+    },
+    {
+      "when": {
+        "water": "8",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_8",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "8",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_8",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "8",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_8",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "8",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_8",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "8",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_8",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "8",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_8",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "8",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_8",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "8",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_8",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "9"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_9"
+      }
+    },
+    {
+      "when": {
+        "water": "9",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_9",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "9",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_9",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "9",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_9",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "9",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_9",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "9",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_9",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "9",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_9",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "9",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_9",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "9",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_9",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "10"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_10"
+      }
+    },
+    {
+      "when": {
+        "water": "10",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_10",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "10",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_10",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "10",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_10",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "10",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_10",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "10",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_10",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "10",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_10",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "10",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_10",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "10",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_10",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "11"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_11"
+      }
+    },
+    {
+      "when": {
+        "water": "11",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_11",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "11",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_11",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "11",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_11",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "11",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_11",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "11",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_11",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "11",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_11",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "11",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_11",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "11",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_11",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "12"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_12"
+      }
+    },
+    {
+      "when": {
+        "water": "12",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_12",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "12",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_12",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "12",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_12",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "12",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_12",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "12",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_12",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "12",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_12",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "12",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_12",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "12",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_12",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "13"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_13"
+      }
+    },
+    {
+      "when": {
+        "water": "13",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_13",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "13",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_13",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "13",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_13",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "13",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_13",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "13",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_13",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "13",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_13",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "13",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_13",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "13",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_13",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "14"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_14"
+      }
+    },
+    {
+      "when": {
+        "water": "14",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_14",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "14",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_14",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "14",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_14",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "14",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_14",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "14",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_14",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "14",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_14",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "14",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_14",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "14",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_14",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "15"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_15"
+      }
+    },
+    {
+      "when": {
+        "water": "15",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_15",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "15",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_15",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "15",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_15",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "15",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_15",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "15",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_15",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "15",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_15",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "15",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_15",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "15",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_15",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "16"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_16"
+      }
+    },
+    {
+      "when": {
+        "water": "16",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_16",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "16",
+        "north": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_16",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "16",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_16",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "16",
+        "east": "true",
+        "north": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_16",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "16",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_16",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "16",
+        "south": "true",
+        "east": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_16",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "16",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_edge_16",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "water": "16",
+        "west": "true",
+        "south": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/tank_water_corner_16",
+        "y": 270,
+        "uvlock": true
+      }
+    }
+  ]
+}

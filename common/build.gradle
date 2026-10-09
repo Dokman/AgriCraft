@@ -21,3 +21,38 @@ dependencies {
 
 	modCompileOnly("vazkii.botania:Botania:$botania_version-FORGE:api") { transitive = false }
 }
+
+tasks.register('irrigationFlowTest', JavaExec) {
+	dependsOn testClasses
+	classpath = sourceSets.test.runtimeClasspath
+	mainClass = 'com.agricraft.agricraft.common.block.entity.IrrigationFlowTest'
+	jvmArgs '-ea'
+}
+
+tasks.register('irrigationTankTest', JavaExec) {
+	dependsOn testClasses
+	classpath = sourceSets.test.runtimeClasspath
+	mainClass = 'com.agricraft.agricraft.common.block.IrrigationTankBlockTest'
+	jvmArgs '-ea'
+}
+
+tasks.register('createHarvestTest', JavaExec) {
+	dependsOn testClasses
+	classpath = sourceSets.test.runtimeClasspath
+	mainClass = 'com.agricraft.agricraft.compat.create.CreateHarvestCompatTest'
+	jvmArgs '-ea'
+}
+
+tasks.register('irrigationBucketsTest', JavaExec) {
+	dependsOn testClasses
+	classpath = sourceSets.test.runtimeClasspath
+	mainClass = 'com.agricraft.agricraft.common.block.entity.IrrigationBucketsTest'
+	jvmArgs '-ea'
+}
+
+tasks.named('check') {
+	dependsOn tasks.named('irrigationFlowTest')
+	dependsOn tasks.named('irrigationTankTest')
+	dependsOn tasks.named('createHarvestTest')
+	dependsOn tasks.named('irrigationBucketsTest')
+}

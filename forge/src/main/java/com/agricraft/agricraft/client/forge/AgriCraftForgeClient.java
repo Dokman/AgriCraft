@@ -3,6 +3,7 @@ package com.agricraft.agricraft.client.forge;
 import com.agricraft.agricraft.api.AgriApi;
 import com.agricraft.agricraft.client.AgriCraftClient;
 import com.agricraft.agricraft.client.ber.CropBlockEntityRenderer;
+import com.agricraft.agricraft.client.ber.SprinklerBlockEntityRenderer;
 import com.agricraft.agricraft.client.ber.SeedAnalyzerEntityRenderer;
 import com.agricraft.agricraft.client.gui.MagnifyingGlassOverlay;
 import com.agricraft.agricraft.client.gui.SeedAnalyzerScreen;
@@ -61,6 +62,7 @@ public class AgriCraftForgeClient {
 		}
 		// add the crop sticks models else they're not loaded
 		event.register(new ResourceLocation("agricraft:block/wooden_crop_sticks"));
+		event.register(SprinklerBlockEntityRenderer.HEAD);
 		event.register(new ResourceLocation("agricraft:block/iron_crop_sticks"));
 		event.register(new ResourceLocation("agricraft:block/obsidian_crop_sticks"));
 		event.register(new ResourceLocation("agricraft:block/wooden_cross_crop_sticks"));
@@ -71,6 +73,7 @@ public class AgriCraftForgeClient {
 	@SubscribeEvent
 	public static void registerBer(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer(ModBlockEntityTypes.CROP.get(), CropBlockEntityRenderer::new);
+		event.registerBlockEntityRenderer(ModBlockEntityTypes.IRRIGATION.get(), SprinklerBlockEntityRenderer::new);
 		event.registerBlockEntityRenderer(ModBlockEntityTypes.SEED_ANALYZER.get(), SeedAnalyzerEntityRenderer::new);
 	}
 

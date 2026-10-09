@@ -2,6 +2,7 @@ package com.agricraft.agricraft.client;
 
 import com.agricraft.agricraft.api.AgriApi;
 import com.agricraft.agricraft.client.ber.CropBlockEntityRenderer;
+import com.agricraft.agricraft.client.ber.SprinklerBlockEntityRenderer;
 import com.agricraft.agricraft.client.ber.SeedAnalyzerEntityRenderer;
 import com.agricraft.agricraft.client.bewlr.AgriSeedBEWLR;
 import com.agricraft.agricraft.client.gui.MagnifyingGlassOverlay;
@@ -39,6 +40,7 @@ public class AgriCraftFabricClient implements ClientModInitializer {
 		AgriCraftClient.init();
 		BuiltinItemRendererRegistry.INSTANCE.register(ModItems.SEED.get(), AgriSeedBEWLR.INSTANCE::renderByItem);
 		ModelLoadingPlugin.register(pluginContext -> {
+			pluginContext.addModels(SprinklerBlockEntityRenderer.HEAD);
 			for (Map.Entry<ResourceLocation, Resource> entry : FileToIdConverter.json("models/seed").listMatchingResources(Minecraft.getInstance().getResourceManager()).entrySet()) {
 				ResourceLocation seed = new ResourceLocation(entry.getKey().getNamespace(), entry.getKey().getPath().replace("models/seed", "seed").replace(".json", ""));
 				pluginContext.addModels(seed);
@@ -57,6 +59,7 @@ public class AgriCraftFabricClient implements ClientModInitializer {
 		});
 
 		BlockEntityRenderers.register(ModBlockEntityTypes.CROP.get(), CropBlockEntityRenderer::new);
+		BlockEntityRenderers.register(ModBlockEntityTypes.IRRIGATION.get(), SprinklerBlockEntityRenderer::new);
 		BlockEntityRenderers.register(ModBlockEntityTypes.SEED_ANALYZER.get(), SeedAnalyzerEntityRenderer::new);
 		MenuScreens.register(ModMenus.SEED_ANALYZER_MENU.get(), SeedAnalyzerScreen::new);
 

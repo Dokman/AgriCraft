@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "agricraft:block/irrigation/sprinkler"
+    }
+  }
+}

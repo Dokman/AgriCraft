@@ -1,0 +1,12 @@
+{
+  "block.agricraft.irrigation_tank": "Depósito de riego de madera",
+  "block.agricraft.irrigation_channel": "Canal de riego de madera",
+  "block.agricraft.irrigation_channel_hollow": "Canal de riego de madera (cubierto)",
+  "block.agricraft.sprinkler": "Aspersor",
+  "item.agricraft.agri_channel_valve": "Válvula del canal de riego",
+  "agricraft.irrigation.contents": "Agua: %s / %s mB",
+  "config.agricraft.irrigation": "Riego",
+  "config.agricraft.compat.create": "Compatibilidad con la cosechadora mecánica de Create",
+  "config.agricraft.irrigation.water_per_tick": "Consumo de agua del aspersor por tick",
+  "config.agricraft.irrigation.growth_chance": "Probabilidad de crecimiento del aspersor"
+}

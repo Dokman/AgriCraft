@@ -25,6 +25,11 @@ public class ModItems {
 
 	public static final PlatformRegistry.Entry<Item> JOURNAL = ITEMS.register("journal", () -> new JournalItem(new Item.Properties()));
 	public static final PlatformRegistry.Entry<Item> SEED_ANALYZER = ITEMS.register("seed_analyzer", () -> new BlockItem(ModBlocks.SEED_ANALYZER.get(), new Item.Properties()));
+	public static final PlatformRegistry.Entry<Item> IRRIGATION_TANK = ITEMS.register("irrigation_tank", () -> new BlockItem(ModBlocks.IRRIGATION_TANK.get(), new Item.Properties()));
+	public static final PlatformRegistry.Entry<Item> IRRIGATION_CHANNEL = ITEMS.register("irrigation_channel", () -> new BlockItem(ModBlocks.IRRIGATION_CHANNEL.get(), new Item.Properties()));
+	public static final PlatformRegistry.Entry<Item> IRRIGATION_CHANNEL_HOLLOW = ITEMS.register("irrigation_channel_hollow", () -> new BlockItem(ModBlocks.IRRIGATION_CHANNEL_HOLLOW.get(), new Item.Properties()));
+	public static final PlatformRegistry.Entry<Item> SPRINKLER = ITEMS.register("sprinkler", () -> new BlockItem(ModBlocks.SPRINKLER.get(), new Item.Properties()));
+	public static final PlatformRegistry.Entry<Item> CHANNEL_VALVE = ITEMS.register("agri_channel_valve", () -> new Item(new Item.Properties()));
 	public static final PlatformRegistry.Entry<Item> CLIPPER = ITEMS.register("clipper", () -> new ClipperItem(new Item.Properties().stacksTo(1)));
 	public static final PlatformRegistry.Entry<Item> MAGNIFYING_GLASS = ITEMS.register("magnifying_glass", () -> new MagnifyingGlassItem(new Item.Properties().stacksTo(1)));
 	public static final PlatformRegistry.Entry<Item> WOODEN_RAKE = ITEMS.register("wooden_rake", () -> new RakeItem(new Item.Properties(), RakeItem.WOOD_LOGIC));
@@ -50,6 +55,11 @@ public class ModItems {
 		}
 		output.accept(JOURNAL.get().getDefaultInstance());
 		output.accept(SEED_ANALYZER.get());
+		output.accept(IRRIGATION_TANK.get());
+		output.accept(IRRIGATION_CHANNEL.get());
+		output.accept(IRRIGATION_CHANNEL_HOLLOW.get());
+		output.accept(SPRINKLER.get());
+		output.accept(CHANNEL_VALVE.get());
 		output.accept(CLIPPER.get());
 		output.accept(MAGNIFYING_GLASS.get());
 		output.accept(WOODEN_RAKE.get());

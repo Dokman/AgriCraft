@@ -1,0 +1,212 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "north": "true",
+        "east": "true",
+        "south": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_15"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "east": "true",
+        "south": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_14"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "east": "false",
+        "south": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_13"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "east": "false",
+        "south": "true",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_12"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "east": "true",
+        "south": "false",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_11"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "east": "true",
+        "south": "false",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_10"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "east": "false",
+        "south": "false",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_9"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "east": "false",
+        "south": "false",
+        "west": "true"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_8"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "east": "true",
+        "south": "true",
+        "west": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_7"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "east": "true",
+        "south": "true",
+        "west": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_6"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "east": "false",
+        "south": "true",
+        "west": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_5"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "east": "false",
+        "south": "true",
+        "west": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_4"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "east": "true",
+        "south": "false",
+        "west": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_3"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "east": "true",
+        "south": "false",
+        "west": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_2"
+      }
+    },
+    {
+      "when": {
+        "north": "true",
+        "east": "false",
+        "south": "false",
+        "west": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_1"
+      }
+    },
+    {
+      "when": {
+        "north": "false",
+        "east": "false",
+        "south": "false",
+        "west": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/hollow_channel_join_0"
+      }
+    },
+    {
+      "when": {
+        "valve": "true",
+        "closed": "false",
+        "active": "false"
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/valve"
+      }
+    },
+    {
+      "when": {
+        "AND": [
+          {
+            "valve": "true"
+          },
+          {
+            "OR": [
+              {
+                "closed": "true"
+              },
+              {
+                "active": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "apply": {
+        "model": "agricraft:block/irrigation/valve_closed"
+      }
+    }
+  ]
+}

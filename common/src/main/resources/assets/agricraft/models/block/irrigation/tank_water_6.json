@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": false,
+  "textures": {
+    "water": "agricraft:block/irrigation_water",
+    "particle": "minecraft:block/oak_planks"
+  },
+  "elements": [
+    {
+      "from": [
+        2,
+        6.5,
+        2
+      ],
+      "to": [
+        14,
+        6.5,
+        14
+      ],
+      "faces": {
+        "up": {
+          "texture": "#water"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    "ici",
+    " i "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_nugget"
+    },
+    "c": {
+      "item": "agricraft:irrigation_channel"
+    }
+  },
+  "result": {
+    "item": "agricraft:agri_channel_valve",
+    "count": 1
+  }
+}

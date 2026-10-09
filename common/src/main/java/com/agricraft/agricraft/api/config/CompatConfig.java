@@ -14,6 +14,10 @@ import com.teamresourceful.resourcefulconfig.common.config.EntryType;
 @Category(id = "compat", translation = "config.agricraft.compat")
 public final class CompatConfig {
 
+	@ConfigEntry(id = "create", type = EntryType.BOOLEAN, translation = "config.agricraft.compat.create")
+	@Comment("Allow Create mechanical harvesters to collect mature AgriCraft crops without destroying plants or crop sticks.")
+	public static boolean enableCreate = true;
+
 	@ConfigEntry(id = "botania", type = EntryType.BOOLEAN, translation = "config.agricraft.compat.botania")
 	@Comment("Set to false to disable compatibility with Botania (in case things break)")
 	public static boolean enableBotania = true;

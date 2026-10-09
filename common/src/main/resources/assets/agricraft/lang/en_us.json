@@ -70,7 +70,7 @@
   "agricraft.journal.introduction.alpha.features": "Implemented Features:",
   "agricraft.journal.introduction.alpha.features.list": "Custom plants / soils / mutations / fertilizers / weeds, Default plants for minecraft, Agricultural Journal, Seed Analyzer, Seed Bag, Trowel, JEI & Jade compatibility, default datapack for immersive engineering, biomes'o plenty, and pam's harvestcrap 2",
   "agricraft.journal.introduction.alpha.not_features": "Not Implemented Features:",
-  "agricraft.journal.introduction.alpha.not_features.list": "Greenhouses, Irrigation, Decorations, Rakes",
+  "agricraft.journal.introduction.alpha.not_features.list": "Greenhouses, Decorations, Rakes",
   "agricraft.journal.crop_breeding": "Plant Breeding Genetics",
   "agricraft.journal.crop_breeding.paragraph_1": "To cross-breed two plants, they must be planted on crop sticks, with one block space in between. Place double crop sticks on this spot in the middle.",
   "agricraft.journal.crop_breeding.paragraph_2": "When both plants are mature, they have a probability of producing offspring, each passing on half of their DNA to their progeny.",
@@ -198,6 +198,7 @@
   "config.agricraft.stats.mutativity_hidden": "Hide Mutativity",
   "config.agricraft.compat": "Mod compatibilities",
   "config.agricraft.compat.botania": "Enable Botania compat",
+  "config.agricraft.compat.create": "Enable Create mechanical harvester compatibility",
   "config.agricraft.compat.mysticalagriculture": "Enable Mystical Agriculture compat",
   "config.agricraft.compat.pneumaticcraft": "Enable PneumaticCraft compat",
   "config.agricraft.compat.industrialforegoing": "Enable Industrial Foregoing compat",
@@ -396,5 +397,14 @@
   "agricraft.datapacks.mysticalagriculture": "Mystical Agriculture extra crops (data)",
   "agricraft.resourcepacks.mysticalagriculture": "Mystical Agriculture extra crops (resources)",
   "agricraft.datapacks.pamhc2crops": "Pam's HarvestCraft 2 - Crops extra crops (data)",
-  "agricraft.resourcepacks.pamhc2crops": "Pam's HarvestCraft 2 - Crops extra crops (resources)"
+  "agricraft.resourcepacks.pamhc2crops": "Pam's HarvestCraft 2 - Crops extra crops (resources)",
+  "block.agricraft.irrigation_tank": "Wooden Irrigation Tank",
+  "block.agricraft.irrigation_channel": "Wooden Irrigation Channel",
+  "block.agricraft.irrigation_channel_hollow": "Wooden Irrigation Channel (Hollow)",
+  "block.agricraft.sprinkler": "Sprinkler",
+  "item.agricraft.agri_channel_valve": "Irrigation Channel Valve",
+  "agricraft.irrigation.contents": "Water: %s / %s mB",
+  "config.agricraft.irrigation": "Irrigation",
+  "config.agricraft.irrigation.water_per_tick": "Sprinkler water consumption per tick",
+  "config.agricraft.irrigation.growth_chance": "Sprinkler growth chance"
 }
